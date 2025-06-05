@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from '@/components/common/Card';
 import PostModal from '@/components/common/PostModal';
+import Header from '@/components/layout/Header';
 
 const Home = () => {
   const [posts, setPosts] = useState([
@@ -31,6 +32,7 @@ const Home = () => {
 
   return (
     <div className="p-8">
+      <Header />
       <h1 className="text-2xl font-bold mb-4">Home Page</h1>
       <button
         className="bg-blue-500 text-white px-4 py-2 rounded-lg mb-4"
